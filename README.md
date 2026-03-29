@@ -1,8 +1,8 @@
-# 🎓 Campus Course & Records Manager (CRM)
+# 🎓 Curriculum Record Manager (CRM)
 
 ## Project Overview
 
-The **Campus Course & Records Manager (CRM)** is a console-based Java application designed to manage student and course records for an educational institute. It serves as a practical demonstration of core Java SE principles, including Object-Oriented Programming (OOP), modern file I/O with NIO.2, the Streams API, and foundational design patterns.
+The **Curriculum Record Manager (CRM)** is a console-based Java application designed to manage student and course records for an educational institute. It serves as a practical demonstration of core Java SE principles, including Object-Oriented Programming (OOP), modern file I/O with NIO.2, the Streams API, and foundational design patterns.
 
 The application allows an administrator to perform the following actions through a command-line interface:
 * **Manage Students**: Add, update, and list students.
@@ -22,16 +22,16 @@ The application allows an administrator to perform the following actions through
 ### Command-Line Instructions
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/klakshya007/CRM-Java-Project.git
-    cd CRM
+    git clone https://github.com/aishaifrah23/curriculum-record-manager.git
+    cd curriculum-record-manager/src
     ```
 2.  **Compile the Project** (From the root `CRM` directory)
     ```bash
-    javac -d bin src/edu/CRM/cli/CRMApp.java
+    javac edu/crm/cli/CRMApp.java edu/crm/config/*.java edu/crm/domain/*.java edu/crm/service/*.java edu/crm/io/*.java edu/crm/util/*.java
     ```
 3.  **Run the Application**
     ```bash
-    java -cp bin edu.crm.cli.CRMApp
+   java edu.crm.cli.CRMApp
     ```
 
 ***
@@ -78,11 +78,11 @@ The Java platform consists of three core components that work together.
 
     
 
-### Eclipse IDE Setup
-1.  **Download**: Get the "Eclipse Installer" and choose "Eclipse IDE for Java Developers".
-2.  **Create Project**: In Eclipse, go to `File` -> `New` -> `Java Project`.
-3.  **Run Application**: Right-click on `CRMApp.java` -> `Run As` -> `Java Application`.
-
+###### 💻 VS Code IDE Setup
+1. **Download**: Install [Visual Studio Code](https://code.visualstudio.com/).
+2. **Extensions**: Open the Extensions view (`Ctrl+Shift+X`) and install the **"Extension Pack for Java"** by Microsoft.
+3. **Open Project**: Go to `File` -> `Open Folder` and select the `CRM` directory.
+4. **Run Application**: Open `src/edu/crm/cli/CRMApp.java` and click the **Run** button (play icon) at the top right, or press **F5**.
     
 
 ***
